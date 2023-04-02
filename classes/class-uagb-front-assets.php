@@ -147,7 +147,7 @@ class UAGB_Front_Assets {
 			if ( 0 !== $current_object_id && null !== $current_object_id ) {
 				$current_post_assets = new UAGB_Post_Assets( $current_object_id );
 				$current_post_assets->enqueue_scripts();
-			} else {
+			} else if ( $cached_wp_query ) {
 				foreach ( $cached_wp_query as $post ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 					$current_post_assets = new UAGB_Post_Assets( $post->ID );
 					$current_post_assets->enqueue_scripts();
@@ -158,7 +158,7 @@ class UAGB_Front_Assets {
 			If no posts are present in the category/archive
 			or 404 page (which is an obvious case for 404), then get the current page ID and enqueue script.
 			*/
-			if ( ! $cached_wp_query ) {
+			else {
 				$current_post_assets = new UAGB_Post_Assets( $current_object_id );
 				$current_post_assets->enqueue_scripts();
 			}
