@@ -164,7 +164,14 @@ function styling( props ) {
 		isBlockRootParent,
 
 		widthTypeTablet,
-		widthTypeMobile
+		widthTypeMobile,
+		gradientColor1,
+		gradientColor2,
+		gradientLocation1,
+		gradientLocation2,
+		gradientType,
+		gradientAngle,
+		selectGradient,
 	} = attributes;
 
 	const innerContentCustomWidthDesktopFallback = getFallbackNumber( innerContentCustomWidthDesktop, 'innerContentCustomWidthDesktop', blockName );
@@ -209,6 +216,13 @@ function styling( props ) {
         'backgroundImage': backgroundImageDesktop,
         'backgroundColor': backgroundColor,
         'gradientValue': gradientValue,
+		'gradientColor1': gradientColor1,
+		'gradientColor2': gradientColor2,
+		'gradientLocation1': gradientLocation1,
+		'gradientLocation2': gradientLocation2,
+		'gradientType': gradientType,
+		'gradientAngle': gradientAngle,
+		'selectGradient': selectGradient,
         'backgroundRepeat': backgroundRepeatDesktop,
         'backgroundPosition': backgroundPositionDesktop,
         'backgroundSize': backgroundSizeDesktop,
@@ -225,6 +239,24 @@ function styling( props ) {
 
 	const selectors = {
 		'.wp-block-uagb-container .block-editor-block-list__block' : {
+			'color': textColor,
+		},
+		'.wp-block-uagb-container h1' : {
+			'color': textColor,
+		},
+		'.wp-block-uagb-container h2' : {
+			'color': textColor,
+		},
+		'.wp-block-uagb-container h3' : {
+			'color': textColor,
+		},
+		'.wp-block-uagb-container h4' : {
+			'color': textColor,
+		},
+		'.wp-block-uagb-container h5' : {
+			'color': textColor,
+		},
+		'.wp-block-uagb-container h6' : {
 			'color': textColor,
 		},
 		'.wp-block-uagb-container .block-editor-block-list__block a' : {
@@ -257,6 +289,13 @@ function styling( props ) {
         'backgroundImage': backgroundImageDesktop,
         'backgroundColor': backgroundColor,
         'gradientValue': gradientValue,
+		'gradientColor1': gradientColor1,
+		'gradientColor2': gradientColor2,
+		'gradientLocation1': gradientLocation1,
+		'gradientLocation2': gradientLocation2,
+		'gradientType': gradientType,
+		'gradientAngle': gradientAngle,
+		'selectGradient': selectGradient,
         'backgroundRepeat': backgroundRepeatDesktop,
         'backgroundPosition': backgroundPositionDesktop,
         'backgroundSize': backgroundSizeDesktop,
@@ -389,6 +428,13 @@ function styling( props ) {
         'backgroundImage': backgroundImageTablet,
         'backgroundColor': backgroundColor,
         'gradientValue': gradientValue,
+		'gradientColor1': gradientColor1,
+		'gradientColor2': gradientColor2,
+		'gradientLocation1': gradientLocation1,
+		'gradientLocation2': gradientLocation2,
+		'gradientType': gradientType,
+		'gradientAngle': gradientAngle,
+		'selectGradient': selectGradient,
         'backgroundRepeat': backgroundRepeatTablet,
         'backgroundPosition': backgroundPositionTablet,
         'backgroundSize': backgroundSizeTablet,
@@ -440,6 +486,13 @@ function styling( props ) {
         'backgroundImage': backgroundImageMobile,
         'backgroundColor': backgroundColor,
         'gradientValue': gradientValue,
+		'gradientColor1': gradientColor1,
+		'gradientColor2': gradientColor2,
+		'gradientLocation1': gradientLocation1,
+		'gradientLocation2': gradientLocation2,
+		'gradientType': gradientType,
+		'gradientAngle': gradientAngle,
+		'selectGradient': selectGradient,
         'backgroundRepeat': backgroundRepeatMobile,
         'backgroundPosition': backgroundPositionMobile,
         'backgroundSize': backgroundSizeMobile,

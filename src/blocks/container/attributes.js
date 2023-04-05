@@ -975,7 +975,6 @@ const attributes = {
 		UAGCopyPaste: {
 			styleType: 'desc-color'
 		},
-		default: 'inherit',
 	},
 	linkColor: {
 		type: 'string',
@@ -1063,6 +1062,55 @@ const attributes = {
 	equalHeight: {
 		type: 'boolean',
 		default: false,
+	},
+	gradientColor1: {
+		type: 'string',
+		default: '#06558a',
+		UAGCopyPaste: {
+			styleType: 'gradient-color-1'
+		}
+	},
+	gradientColor2: {
+		type: 'string',
+		default: '#0063A1',
+		UAGCopyPaste: {
+			styleType: 'gradient-color-2'
+		}
+	},
+	gradientType: {
+		type: 'string',
+		default: 'linear',
+		UAGCopyPaste: {
+			styleType: 'gradient-color-type'
+		}
+	},
+	selectGradient: {
+		type: 'string',
+		default: 'basic',
+		UAGCopyPaste: {
+			styleType: 'gradient-type'
+		}
+	},
+	gradientLocation1: {
+		type: 'number',
+		default: 0,
+		UAGCopyPaste: {
+			styleType: 'gradient-location-1'
+		}
+	},
+	gradientLocation2: {
+		type: 'number',
+		default: 100,
+		UAGCopyPaste: {
+			styleType: 'gradient-location-2'
+		}
+	},
+	gradientAngle: {
+		type: 'number',
+		default: 0,
+		UAGCopyPaste: {
+			styleType: 'gradient-angle'
+		}
 	},
 	...inputBorderAttributes
 };
