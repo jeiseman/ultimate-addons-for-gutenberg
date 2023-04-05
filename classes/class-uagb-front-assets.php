@@ -147,7 +147,7 @@ class UAGB_Front_Assets {
 			if ( 0 !== $current_object_id && null !== $current_object_id ) {
 				$current_post_assets = new UAGB_Post_Assets( $current_object_id );
 				$current_post_assets->enqueue_scripts();
-			} else if ( $cached_wp_query ) {
+			} else if ( $cached_wp_query && is_array( $wp_cached_query ) ) {
 				foreach ( $cached_wp_query as $post ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 					$current_post_assets = new UAGB_Post_Assets( $post->ID );
 					$current_post_assets->enqueue_scripts();
